@@ -1,0 +1,54 @@
+﻿@model AdapostAnimale.Models.Cat
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cat</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nickname)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nickname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FurColor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FurColor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OwnerName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OwnerName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OwnerEmail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OwnerEmail)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    <a asp-action="List">Back to List</a>
+</div>
